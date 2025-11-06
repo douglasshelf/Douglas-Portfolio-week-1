@@ -6,7 +6,10 @@
   "scripts": {
     "start": "npx tailwindcss -i ./styles.css -o ./output.css --watch"
   },
-  "keywords": ["html", "css"],
+  "keywords": [
+    "html",
+    "css"
+  ],
   "author": "Ives van Hoorne",
   "license": "MIT",
   "devDependencies": {
