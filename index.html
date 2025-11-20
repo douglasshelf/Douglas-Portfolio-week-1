@@ -12,118 +12,207 @@
     />
     <title>Douglas - Professional Portfolio</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      .hero-gradient {
-        background: linear-gradient(
-          135deg,
-          #0f172a 0%,
-          #1e293b 50%,
-          #334155 100%
-        );
-        position: relative;
-      }
-      .hero-gradient::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(
-            circle at 30% 20%,
-            rgba(34, 197, 94, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 70% 80%,
-            rgba(59, 130, 246, 0.08) 0%,
-            transparent 50%
-          );
-      }
-      .floating-animation {
-        animation: float 6s ease-in-out infinite;
-      }
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-      .text-gradient {
-        background: linear-gradient(135deg, #22c55e, #3b82f6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .glass-button {
-        backdrop-filter: blur(10px);
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .glass-button:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: translateY(-2px);
-      }
-      .primary-button {
-        background: linear-gradient(135deg, #22c55e, #16a34a);
-        box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
-      }
-      .primary-button:hover {
-        background: linear-gradient(135deg, #16a34a, #15803d);
-        box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
-        transform: translateY(-3px);
-      }
-      .tech-icon {
-        filter: drop-shadow(0 4px 8px rgba(34, 197, 94, 0.3));
-      }
-      .about-gradient {
-        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-      }
-      .skill-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        border: 1px solid rgba(34, 197, 94, 0.1);
-      }
-      .skill-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        border-color: rgba(34, 197, 94, 0.3);
-      }
-      .project-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        border-left: 4px solid transparent;
-        background-clip: padding-box;
-      }
-      .project-card:hover {
-        transform: translateY(-5px);
-        border-left-color: #22c55e;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      }
-      .section-title {
-        background: linear-gradient(135deg, #1e293b, #334155);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .accent-gradient {
-        background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
-      }
-      .skill-icon-bg {
-        background: linear-gradient(
-          135deg,
-          rgba(34, 197, 94, 0.1),
-          rgba(34, 197, 94, 0.2)
-        );
-      }
-    </style>
+     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 50%,
+    #334155 100%
+  );
+  position: relative;
+}
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 30% 20%,
+      rgba(34, 197, 94, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(59, 130, 246, 0.08) 0%,
+      transparent 50%
+    );
+}
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.text-gradient {
+  background: linear-gradient(135deg, #22c55e, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.glass-button {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+.primary-button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+}
+.primary-button:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 15px 35px rgba(34, 197, 94, 0.4);
+  transform: translateY(-3px);
+}
+.tech-icon {
+  filter: drop-shadow(0 4px 8px rgba(34, 197, 94, 0.3));
+}
+.about-gradient {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+.skill-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(34, 197, 94, 0.1);
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+.project-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-left: 4px solid transparent;
+  background-clip: padding-box;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-left-color: #22c55e;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.accent-gradient {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+}
+.skill-icon-bg {
+  background: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 0.1),
+    rgba(34, 197, 94, 0.2)
+  );
+}
+
+/* Add missing color classes */
+.bg-indigo-100 { background-color: rgba(224, 231, 255, 1); }
+.text-indigo-800 { color: rgba(55, 48, 163, 1); }
+.hover\:text-indigo-700:hover { color: rgba(67, 56, 202, 1); }
+
+.bg-purple-100 { background-color: rgba(237, 233, 254, 1); }
+.text-purple-800 { color: rgba(85, 33, 181, 1); }
+.hover\:text-purple-700:hover { color: rgba(108, 43, 217, 1); }
+
+.bg-blue-100 { background-color: rgba(219, 234, 254, 1); }
+.text-blue-800 { color: rgba(30, 58, 138, 1); }
+.hover\:text-blue-700:hover { color: rgba(29, 78, 216, 1); }
+
+.bg-emerald-100 { background-color: rgba(209, 250, 229, 1); }
+.text-emerald-800 { color: rgba(6, 78, 59, 1); }
+.hover\:text-emerald-700:hover { color: rgba(4, 120, 87, 1); }
+
+/* Add amber color classes for Card 4 */
+.bg-amber-100 { background-color: rgba(254, 243, 199, 1); }
+.text-amber-800 { color: rgba(146, 64, 14, 1); }
+.hover\:text-amber-700:hover { color: rgba(180, 83, 9, 1); }
+.bg-amber-400 { background-color: rgba(251, 191, 36, 1); }
+.bg-amber-600 { background-color: rgba(217, 119, 6, 1); }
+.text-amber-600 { color: rgba(217, 119, 6, 1); }
+
+/* Add amber gradient classes */
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-amber-400 {
+  --tw-gradient-from: #fbbf24;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 191, 36, 0));
+}
+
+.to-amber-600 {
+  --tw-gradient-to: #d97706;
+}
+/* Ensure project cards have proper hover states */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+/* Blurred Background for hero */
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 50%,
+    #334155 100%
+  );
+  position: relative;
+}
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./Douglas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(13px) brightness(0.2);
+  z-index: 0;
+}
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 30% 20%,
+      rgba(34, 197, 94, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(59, 130, 246, 0.12) 0%,
+      transparent 50%
+    );
+  z-index: 1;
+}
+
+  </style>
   </head>
   <body class="relative">
     <!-- Skip to Content Link (a11y) -->
@@ -135,6 +224,7 @@
     </a>
 
     <!-- Hero Section -->
+   
     <section
       class="hero-gradient min-h-screen flex flex-col items-center justify-center text-center px-6 text-white relative overflow-hidden"
     >
@@ -331,7 +421,7 @@
                 Douglas from Uyo, Nigeria
               </h3>
               <p class="text-lg text-slate-600 leading-relaxed">
-                An automation developer, content creator, and aspiring software
+                An automation developer, content writer, and aspiring software
                 engineer with a passion for building intelligent systems that
                 solve real-world problems.
               </p>
@@ -422,7 +512,7 @@
               </li>
               <li class="flex items-center justify-center">
                 <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span
-                >Selenium
+                >GoHighLevel
               </li>
               <li class="flex items-center justify-center">
                 <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>Make
@@ -597,422 +687,410 @@
           </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <!-- Project Card 1 -->
-          <div
-            class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
-          >
-            <div class="flex items-start justify-between mb-6">
-              <div
-                class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center"
-                aria-hidden="true"
-              >
-                <svg
-                  class="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              </div>
-              <span
-                class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full"
-                >Automation</span
-              >
-            </div>
-            <h3 class="text-2xl font-bold text-slate-800 mb-4">
-              RowdyBus Blog Automation
-            </h3>
-            <p class="text-slate-600 mb-6 leading-relaxed">
-              Developed an intelligent content automation system that publishes
-              two high-quality blog posts daily for RowdyBus.com, integrating
-              Make workflows with WordPress CMS for seamless content delivery.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Make</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >WordPress</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Python</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >API Integration</span
-              >
-            </div>
-            <div class="flex items-center justify-between">
-              <a
-                href="https://rowdybus.com"
-                rel="noopener"
-                target="_blank"
-                class="flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors"
-              >
-                <span>View Live Site</span>
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- Project Card 2 -->
-          <div
-            class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
-          >
-            <div class="flex items-start justify-between mb-6">
-              <div
-                class="w-14 h-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center"
-                aria-hidden="true"
-              >
-                <svg
-                  class="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <span
-                class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full"
-                >AI Tool</span
-              >
-            </div>
-            <h3 class="text-2xl font-bold text-slate-800 mb-4">
-              Photo to Pencil Sketch AI
-            </h3>
-            <p class="text-slate-600 mb-6 leading-relaxed">
-              Built and successfully commercialized an AI-powered tool that
-              converts photographs into artistic pencil sketches using
-              Replicate's API. Targeted creative professionals and
-              print-on-demand entrepreneurs.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Replicate API</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Python</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Webhooks</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >AI Integration</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Make</span
-              >
-            </div>
-            <div class="flex items-center justify-between">
-              <a
-                href="https://drive.google.com/drive/folders/1zdjDcwTFiQ0k2VQvs14K67G_5lWnR4eS?usp=sharing"
-                rel="noopener"
-                target="_blank"
-                class="flex items-center text-purple-600 hover:text-purple-700 font-semibold transition-colors"
-              >
-                <span>View Demo</span>
-                <svg
-                  class="w-4 h-4 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Project Card 3- Dumpster Rental System -->
- <div
- class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
+         
+        <!-- Project Card 1 -->
+<div
+class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
 >
- <div class="flex items-start justify-between mb-6">
-   <div
-     class="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center"
-     aria-hidden="true"
-   >
-     <svg
-       class="w-7 h-7 text-white"
-       fill="none"
-       stroke="currentColor"
-       viewBox="0 0 24 24"
-     >
-       <path
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         stroke-width="2"
-         d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-       />
-     </svg>
-   </div>
-   <span
-     class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
-     >Automation</span
-   >
- </div>
+<div class="flex items-start justify-between mb-6">
+  <div
+    class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center"
+    aria-hidden="true"
+  >
+    <svg
+      class="w-7 h-7 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M13 10V3L4 14h7v7l9-11h-7z"
+      />
+    </svg>
+  </div>
+  <span
+    class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full"
+    >Automation</span
+  >
+</div>
 <h3 class="text-2xl font-bold text-slate-800 mb-4">
-Dumpster Rental Automation System
+  RowdyBus Blog Automation
 </h3>
 <p class="text-slate-600 mb-6 leading-relaxed">
-Complete end-to-end automation architecture for dumpster rental operations. 
-Features real-time inventory management, zero double-booking guarantee, 
-automated payment processing, and intelligent waitlist notifications. 
-Achieved 95% automation rate with sub-2-second response times.
+  Developed an intelligent content automation system that publishes
+  two high-quality blog posts daily for RowdyBus.com, integrating
+  Make workflows with WordPress CMS for seamless content delivery.
 </p>
 <div class="flex flex-wrap gap-2 mb-6">
-<span
-class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
->n8n Workflows</span
->
-<span
-class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
->Supabase</span
->
-<span
-class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
->GoHighLevel</span
->
-<span
-class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
->Stripe Integration</span
->
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Make</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >WordPress</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Python</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >API Integration</span
+  >
 </div>
 <div class="flex items-center justify-between">
-  <a 
-  href="https://drive.google.com/drive/folders/1Hkzt3v-5_DZ65cB42iXxSX4fEWISSZJD?usp=sharing"
-  rel="noopener"
-  target="_blank"
-  class="flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
->
-  <span>View Demo</span>
-  <svg
-    class="w-4 h-4 ml-2"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
+  <a
+    href="https://rowdybus.com"
+    rel="noopener"
+    target="_blank"
+    class="flex items-center text-green-600 hover:text-green-700 font-semibold transition-colors"
   >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-    />
-  </svg>
-</a>
+    <span>View Live Site</span>
+    <svg
+      class="w-4 h-4 ml-2"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
 </div>
-         
-           <!-- Project Card 4 -->
-           <div
-           class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
-         >
-           <div class="flex items-start justify-between mb-6">
-             <div
-               class="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center"
-               aria-hidden="true"
-             >
-               <svg
-                 class="w-7 h-7 text-white"
-                 fill="none"
-                 stroke="currentColor"
-                 viewBox="0 0 24 24"
-               >
-                 <path
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   stroke-width="2"
-                   d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                 />
-               </svg>
-             </div>
-             <span
-               class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
-               >Content</span
-             >
-           </div>
-           <h3 class="text-2xl font-bold text-slate-800 mb-4">
-             Writing Portfolio
-           </h3>
-           <p class="text-slate-600 mb-6 leading-relaxed">
-             A comprehensive collection showcasing diverse writing expertise
-             across blog posts, technical articles, SEO content, and creative
-             pieces. Demonstrates versatility in tone, style, and strategic
-             content development.
-           </p>
-           <div class="flex flex-wrap gap-2 mb-6">
-             <span
-               class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-               >SEO Writing</span
-             >
-             <span
-               class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-               >Technical Writing</span
-             >
-             <span
-               class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-               >Content Strategy</span
-             >
-             <span
-               class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-               >Creative Writing</span
-             >
-           </div>
-           <div class="flex items-center justify-between">
-             <a
-               href="https://linktr.ee/douglasshelf"
-               rel="noopener"
-               target="_blank"
-               class="flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-             >
-               <span>View Portfolio</span>
-               <svg
-                 class="w-4 h-4 ml-2"
-                 fill="none"
-                 stroke="currentColor"
-                 viewBox="0 0 24 24"
-               >
-                 <path
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   stroke-width="2"
-                   d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                 />
-               </svg>
-             </a>
-           </div>
-         </div>
-          <!-- Project Card 4 -->
-          <div
-            class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
-          >
-            <div class="flex items-start justify-between mb-6">
-              <div
-                class="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center"
-                aria-hidden="true"
-              >
-                <svg
-                  class="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                  />
-                </svg>
-              </div>
-              <span
-                class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full"
-                >Development</span
-              >
-            </div>
-            <h3 class="text-2xl font-bold text-slate-800 mb-4">
-              Professional Portfolio Website
-            </h3>
-            <p class="text-slate-600 mb-6 leading-relaxed">
-              A modern, responsive portfolio website built with advanced CSS
-              techniques and optimized for performance. Features sophisticated
-              animations, professional design patterns, and seamless user
-              experience.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >HTML5</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Tailwind CSS</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Responsive Design</span
-              >
-              <span
-                class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
-                >Performance Optimized</span
-              >
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex space-x-4">
-                <a
-                  href="#"
-                  class="flex items-center text-emerald-600 hover:text-emerald-700 font-semibold transition-colors"
-                >
-                  <span>Live Site</span>
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="flex items-center text-slate-600 hover:text-slate-700 font-semibold transition-colors"
-                >
-                  <span>GitHub</span>
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Call to Action -->
+</div>
+
+<!-- Project Card 2 -->
+<div
+class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
+>
+<div class="flex items-start justify-between mb-6">
+  <div
+    class="w-14 h-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center"
+    aria-hidden="true"
+  >
+    <svg
+      class="w-7 h-7 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+      />
+    </svg>
+  </div>
+  <span
+    class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full"
+    >AI Tool</span
+  >
+</div>
+<h3 class="text-2xl font-bold text-slate-800 mb-4">
+  Photo to Pencil Sketch AI
+</h3>
+<p class="text-slate-600 mb-6 leading-relaxed">
+  Built and successfully commercialized an AI-powered tool that
+  converts photographs into artistic pencil sketches using
+  Replicate's API. Targeted creative professionals and
+  print-on-demand entrepreneurs.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Replicate API</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Python</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Webhooks</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >AI Integration</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Make</span
+  >
+</div>
+<div class="flex items-center justify-between">
+  <a
+    href="https://drive.google.com/drive/folders/1zdjDcwTFiQ0k2VQvs14K67G_5lWnR4eS?usp=sharing"
+    rel="noopener"
+    target="_blank"
+    class="flex items-center text-purple-600 hover:text-purple-700 font-semibold transition-colors"
+  >
+    <span>View Demo</span>
+    <svg
+      class="w-4 h-4 ml-2"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
+</div>
+</div>
+
+<!-- Project Card 3 - Dumpster Rental System -->
+<div
+class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
+>
+<div class="flex items-start justify-between mb-6">
+  <div
+    class="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center"
+    aria-hidden="true"
+  >
+    <svg
+      class="w-7 h-7 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+      />
+    </svg>
+  </div>
+  <span
+    class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
+    >Automation</span
+  >
+</div>
+<h3 class="text-2xl font-bold text-slate-800 mb-4">
+  Dumpster Rental Automation System
+</h3>
+<p class="text-slate-600 mb-6 leading-relaxed">
+  Complete end-to-end automation architecture for dumpster rental
+  operations. Features real-time inventory management, zero
+  double-booking guarantee, automated payment processing, and
+  intelligent waitlist notifications. Achieved 95% automation rate
+  with sub-2-second response times.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >n8n Workflows</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Supabase</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >GoHighLevel</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Stripe Integration</span
+  >
+</div>
+<div class="flex items-center justify-between">
+  <a
+    href="https://drive.google.com/drive/folders/1Hkzt3v-5_DZ65cB42iXxSX4fEWISSZJD?usp=sharing"
+    rel="noopener"
+    target="_blank"
+    class="flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+  >
+    <span>View Demo</span>
+    <svg
+      class="w-4 h-4 ml-2"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
+</div>
+</div>
+
+<!-- Project Card 4 - Writing Portfolio -->
+<div
+class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
+>
+<div class="flex items-start justify-between mb-6">
+  <div
+    class="w-14 h-14 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center"
+    aria-hidden="true"
+  >
+    <svg
+      class="w-7 h-7 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+      />
+    </svg>
+  </div>
+  <span
+    class="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full"
+    >Content</span
+  >
+</div>
+<h3 class="text-2xl font-bold text-slate-800 mb-4">
+  Writing Portfolio
+</h3>
+<p class="text-slate-600 mb-6 leading-relaxed">
+  A comprehensive collection showcasing diverse writing expertise
+  across blog posts, technical articles, SEO content, and creative
+  pieces. Demonstrates versatility in tone, style, and strategic
+  content development.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >SEO Writing</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Technical Writing</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Content Strategy</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Creative Writing</span
+  >
+</div>
+<div class="flex items-center justify-between">
+  <a
+    href="https://linktr.ee/douglasshelf"
+    rel="noopener"
+    target="_blank"
+    class="flex items-center text-amber-600 hover:text-amber-700 font-semibold transition-colors"
+  >
+    <span>View Portfolio</span>
+    <svg
+      class="w-4 h-4 ml-2"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
+</div>
+</div>
+
+<!-- Project Card 5 - Portfolio Website -->
+<div
+class="project-card p-8 rounded-2xl shadow-lg transition-all duration-300"
+>
+<div class="flex items-start justify-between mb-6">
+  <div
+    class="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center"
+    aria-hidden="true"
+  >
+    <svg
+      class="w-7 h-7 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+      />
+    </svg>
+  </div>
+  <span
+    class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full"
+    >Development</span
+  >
+</div>
+<h3 class="text-2xl font-bold text-slate-800 mb-4">
+  Professional Portfolio Website
+</h3>
+<p class="text-slate-600 mb-6 leading-relaxed">
+  A modern, responsive portfolio website built with advanced CSS
+  techniques and optimized for performance. Features sophisticated
+  animations, professional design patterns, and seamless user
+  experience.
+</p>
+<div class="flex flex-wrap gap-2 mb-6">
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >HTML5</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Tailwind CSS</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Responsive Design</span
+  >
+  <span
+    class="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm"
+    >Performance Optimized</span
+  >
+</div>
+<div class="flex items-center justify-between">
+  <a
+    href="#"
+    class="flex items-center text-emerald-600 hover:text-emerald-700 font-semibold transition-colors"
+  >
+    <span>Live Site</span>
+    <svg
+      class="w-4 h-4 ml-2"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
+</div>
+</div>
+
+<!-- Call to Action -->
         <div class="text-center mt-16">
           <div
             class="bg-white/70 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/20 max-w-2xl mx-auto"
